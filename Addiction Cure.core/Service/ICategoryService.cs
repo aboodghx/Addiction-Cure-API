@@ -1,0 +1,21 @@
+﻿using Addiction_Cure.core.Data;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Addiction_Cure.core.Service
+{
+    public interface ICategoryService
+    {
+
+        List<Categoryac> GetAllCategoryAC();
+
+        Categoryac GetCategoryByIdAC(int id);
+
+        void CreateCategoryAC(Categoryac categoryac);
+        void UpdateCategoryAC(Categoryac categoryac);
+
+        void DeleteCategoryAC(int id);
+
+    }
+}
